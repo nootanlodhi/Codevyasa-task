@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { sampleData } from '../data/data';
+import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
 
 function Table() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -29,13 +30,13 @@ function Table() {
         <thead>
           <tr>
             <th></th>
-            <th>Sr No.</th>
-            <th>Heading 1</th>
-            <th>Heading 2</th>
-            <th>Heading 3</th>
-            <th>Heading 4</th>
-            <th>Heading 5</th>
-            <th>Heading 6</th>
+            <th><div>Sr No. <UnfoldMoreIcon/></div></th>
+            <th><div>Heading 1 <UnfoldMoreIcon/></div></th>
+            <th><div>Heading 2 <UnfoldMoreIcon/></div></th>
+            <th><div>Heading 3 <UnfoldMoreIcon/></div></th>
+            <th><div>Heading 4 <UnfoldMoreIcon/></div></th>
+            <th><div>Heading 5 <UnfoldMoreIcon/></div></th>
+            <th><div>Heading 6 <UnfoldMoreIcon/></div></th>
             <th>...</th>
           </tr>
         </thead>

@@ -65,6 +65,21 @@ nav{
     justify-content: space-between;
     margin: 20px 0;
 
+    .search-wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid gray;
+      padding: 0 1rem;
+      border-radius: 7px;
+      
+      input{
+        background-color: rgb(235, 235, 235);
+        border: none;
+        outline: none;
+      }
+    }
+
     .right-filter-container{
       display: flex;
       .add-product{
@@ -115,6 +130,11 @@ table {
     background-color: #f6f0ea;
     position: sticky;
     top: 0;
+
+    div{
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
@@ -146,6 +166,11 @@ table {
   .search-filter-container{
     flex-direction: column;
     gap: 20px;
+
+    .search-wrapper{
+      width: 50%;
+      padding: 1rem 0 !important;
+    }
   }
 }
 
@@ -160,5 +185,9 @@ table {
   .navbar{
     flex-direction: column;
     gap: 20px;
+  }
+
+  .search-wrapper{
+    width: 100% !important;
   }
 }
