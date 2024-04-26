@@ -1,4 +1,3 @@
-import { Avatar, IconButton } from "@mui/material";
 import { FaRegBell } from "react-icons/fa";
 
 const Navbar = () => {
@@ -10,10 +9,10 @@ const Navbar = () => {
         <div>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Hb5xzFZJCTW4cMqmPwsgfw-gILUV7QevvQ&s"/>
           <select>
-            <option>aaaaaa</option>
-            <option>aaaaaa</option>
-            <option>aaaaaa</option>
-            <option>aaaaaa</option>
+            <option>Mathews Gill</option>
+            <option>Mathews Gill</option>
+            <option>Mathews Gill</option>
+            <option>Mathews Gill</option>
           </select>
         </div>
       </div>

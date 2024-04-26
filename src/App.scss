@@ -141,3 +141,24 @@ table {
     }
   }
 }
+
+@media (max-width: 900px){
+  .search-filter-container{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 400px){
+  .right-filter-container{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px){
+  .navbar{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
