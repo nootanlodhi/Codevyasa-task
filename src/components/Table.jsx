@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { sampleData } from '../data/data';
-import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
+import TableHeaders from './TableHeaders';
+import TableRows from './TableRows';
 
 function Table() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -28,34 +29,10 @@ function Table() {
     <div className="table-container">
       <table>
         <thead>
-          <tr>
-            <th></th>
-            <th><div>Sr No. <UnfoldMoreIcon/></div></th>
-            <th><div>Heading 1 <UnfoldMoreIcon/></div></th>
-            <th><div>Heading 2 <UnfoldMoreIcon/></div></th>
-            <th><div>Heading 3 <UnfoldMoreIcon/></div></th>
-            <th><div>Heading 4 <UnfoldMoreIcon/></div></th>
-            <th><div>Heading 5 <UnfoldMoreIcon/></div></th>
-            <th><div>Heading 6 <UnfoldMoreIcon/></div></th>
-            <th>...</th>
-          </tr>
+          <TableHeaders/>
         </thead>
         <tbody>
-          {currentItems.map((item, index) => (
-            <tr key={index}>
-              <td>
-                <input type="checkbox" />
-              </td>
-              <td className="sr-no">{indexOfFirstItem + index + 1}.</td>
-              <td>{item.heading1}</td>
-              <td>{item.heading2}</td>
-              <td>{item.heading3}</td>
-              <td>{item.heading4}</td>
-              <td>{item.heading5}</td>
-              <td>{item.heading6}</td>
-              <td>...</td>
-            </tr>
-          ))}
+          <TableRows currentItems={currentItems}/>
         </tbody>
       </table>
       <div className="pagination">
