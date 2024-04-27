@@ -67,16 +67,18 @@ nav{
 
     .search-wrapper{
       display: flex;
-      justify-content: center;
+      // justify-content: center;
       align-items: center;
       border: 1px solid gray;
       padding: 0 1rem;
       border-radius: 7px;
+      width: 20%;
       
       input{
         background-color: rgb(235, 235, 235);
         border: none;
         outline: none;
+        width: 100%;
       }
     }
 
@@ -162,14 +164,14 @@ table {
   }
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) and (min-width: 500px){
   .search-filter-container{
     flex-direction: column;
     gap: 20px;
 
     .search-wrapper{
-      width: 50%;
-      padding: 1rem 0 !important;
+      width: 50% !important;
+      padding: 1rem 1rem !important;
     }
   }
 }
@@ -187,7 +189,13 @@ table {
     gap: 20px;
   }
 
-  .search-wrapper{
-    width: 100% !important;
+  .search-filter-container{
+    flex-direction: column;
+    gap: 20px;
+
+    .search-wrapper{
+      width: 90% !important;
+      padding: 1rem 1rem !important;
+    }
   }
 }
