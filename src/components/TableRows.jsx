@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { BsThreeDots } from "react-icons/bs";
 
 const TableRows = ({ currentItems }) => {
   return (
@@ -15,7 +16,7 @@ const TableRows = ({ currentItems }) => {
           <td>{item.heading4}</td>
           <td>{item.heading5}</td>
           <td>{item.heading6}</td>
-          <td>...</td>
+          <td><BsThreeDots/></td>
         </tr>
       ))}
     </>
